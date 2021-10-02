@@ -21,13 +21,15 @@
                 <li>Person 2</li>
                 <li>Person 3</li>
             </ol>
-            <h2>Agenda</h2>
+        </p>
+        <h2>Agenda</h2>
+        <p>
             <ul>
                 <li>Quick review of <em>last meeting</em></li>
                 <li>New <i>suggestion</i> and direction</li>
                 <li>reporting the progress of each part</li>
             </ul>
-            </p>
+        </p>
         <section>
             <h1>Problem left from last meeting</h1>
             <p>What color should we use for the theme?</p> 
@@ -83,9 +85,9 @@
             <label for="Username"> Name:</label>
             <input type="text" id="Username" name="Username"><br>
             <p>Gender</p>
-            <input type="radio" id="male" name="Gender" value="male" unchecked>
+            <input type="radio" id="male" name="Gender" value="male" checked>
             <label for="male">Male</label><br>
-            <input type="radio" id="male" name="Gender" value="female" unchecked>
+            <input type="radio" id="female" name="Gender" value="female" checked>
             <label for="female">female</label><br>
             
             <label for="basicmeetingidea">Meeting reason</label>
@@ -97,9 +99,9 @@
             </datalist>
             
             <p>Meeting type</p>
-            <input type="checkbox" id="meetingtype" name="online" value="Online">
+            <input type="checkbox" id="online" name="online" value="Online">
             <label for ="online">Online</label><br>
-            <input type="checkbox" id="meetingtype" name="inoffice" value="Inoffice">
+            <input type="checkbox" id="offline" name="inoffice" value="Inoffice">
             <label for ="online">Inoffice</label><br>
 
             <label for="Choosingroom">Choose a room</label>
@@ -115,7 +117,7 @@
             min="2021-10-01" max="2022-12-31"><br>
 
             <label for="additionalinformation">Additional Information</label>
-            <textarea id="additionalinformation" name="Extra information" rows="4" clos="50"></textarea><br>
+            <textarea id="additionalinformation" name="Extra information" rows="4" cols="50"></textarea><br>
             
             <button type="button" onclick="alert('Response Sumbitted')">Submit </button>
 
