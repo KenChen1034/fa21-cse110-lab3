@@ -7,7 +7,7 @@ h1{
     color:cornflowerblue;
     font-size: 48px;
     margin: 0.5in;
-    text-indent: 17cm;    
+    text-align: center;  
 }
 /*Setting a background for img*/
 img{
@@ -25,10 +25,36 @@ img{
 ol{
     font-size: 1.5em;
     line-height: 0.8em;
+    color:crimson;
+}
+/*Adding text decoration to details information*/
+details> p{
+    text-decoration: crimson underline;
 }
 /*Setting font size to be 120%*/
 ul{
     font-size: 120%;
+}
+section.Audio{
+    position: relative;
+    top: -100px;
+}
+
+h2~video{
+    height:auto;
+    width: auto;
+    max-width: 75%;
+    min-width: 20px;
+    position: static;
+    
+}
+
+/**/
+body nav{
+    display: inline-block;
+    background-color: yellow;
+    font-size: 20px;
+    padding: 20px;
 }
 
 /*Changing form's background color to cornsilk
