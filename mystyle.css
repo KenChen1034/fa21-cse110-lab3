@@ -1,9 +1,15 @@
+
+/*changing the background color of the entire site*/
+head, body{
+    background-color:lemonchiffon;
+}
+
 /* Changing Title to color cornflowerblue
     Setting Title size to 48px
     Setting margin to 0.5 in
     Setting indent to be 17cm
     */
-h1{
+    h1{
     color:cornflowerblue;
     font-size: 48px;
     margin: 0.5in;
@@ -48,13 +54,21 @@ h2~video{
     position: static;
     
 }
-
+/*mouse over a link*/
+a:hover{
+    color:red;
+}
+/*when link being active*/
+a:active{
+    color:green;
+}
 /**/
 body nav{
     display: inline-block;
     background-color: yellow;
     font-size: 20px;
     padding: 20px;
+
 }
 
 /*Changing form's background color to cornsilk
@@ -73,4 +87,34 @@ body nav{
     padding-top: 2px;
     padding-bottom: 2px;
 }
-/*
+/*Trying to make list more standout*/
+h2 + ol{
+    background-color: lightcyan;
+}
+
+/*Trying to use Attribute selector*/
+a[href$=".md"]{
+    font-style: italic;
+}
+*{
+    font-family: 'Ephesis', cursive;
+}
+
+/*Resizing throught viewport's width*/
+@media (max-width:500px){
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    img{
+        max-width: 400px;
+        max-height: 400px;
+        padding: auto;
+        margin: auto;
+        width: auto;
+        height: auto;
+    }
+    textarea{
+        max-width: auto;
+    }
+}
+
