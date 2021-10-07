@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+        
         <link rel="stylesheet" href="mystyle.css">
         <style>
             p.ex1{color:red;}
             p.ex1{display:inline;}
+            .flex-container{
+                display: flex;
+            }
+            .flex-item{
+                background-color: aqua;
+                margin: auto;
+            }
+            .container{
+                display:grid;
+                grid-template-columns: 70% 20% 10%;
+            }
+            @media (max-width:500px){
+                .container{
+                    display: grid;
+                    grid-template-columns: auto;
+                }
+                .flex-container{
+                    display:initial;
+                }
+            }
         </style>
         <title>CSE110 Lab2</title>
         <meta name="author" content="SomeLab">
@@ -20,19 +44,25 @@
             </header>
         </main>
         <h2>Attendance List</h2>
-        <ol>
-                <li>Ken Chen</li>
-                <li>Person 1</li>
-                <li>Person 2</li>
-                <li>Person 3</li>
+        <ol class="flex-container">
+                <li class="flex-item">Ken Chen</li>
+                <li class="flex-item">Person 1</li>
+                <li class="flex-item">Person 2</li>
+                <li class="flex-item">Person 3</li>
         </ol>
         <h2>Agenda</h2>
         <ul>
-                <li>Quick review of <p class ="ex1"><em>last meeting</em></p></li>
+                <li>Quick review of <p class ="ex1"><em>last meeting</em></p>
+                    <ol class="container">
+                        <li>Thing1</li>
+                        <li>Thing2</li>
+                        <li>Thing3</li>
+                    </ol>
+                </li>
                 <li>New <i>suggestion</i> and direction</li>
                 <li>reporting the progress of each part</li>
         </ul>
-        <section>
+        <section id="text">
             <h2>Problem left from last meeting</h2>
             <p>What color should we use for the theme?</p> 
             <h2>New problem we should consider</h2>
@@ -48,7 +78,7 @@
        
         </section>
 
-        <section>
+        <section id= "images">
             <hr>
                 <img src="https://i.etsystatic.com/17129545/r/il/71f7ae/1443500616/il_570xN.1443500616_6hkc.jpg" alt="sample example for the project">
             <hr>
@@ -61,7 +91,7 @@
             </audio>
         </section>
 
-        <section>
+        <section id="recording">
             <h2>Video recording of the meeting</h2>
             <video width="320" height="240" controls>
                 <source src="video.mp4" type="video/mp4">
