@@ -1,0 +1,1 @@
+Getting start on Lab3, reading material about CSS and trying to add its feature to my website
